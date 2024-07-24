@@ -7,31 +7,32 @@ export const SImageWrapper = styled.div`
 
 export const SMainImage = styled.img`
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 `
 
 export const STextWrapper = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    color: white;
+    background-color: #0000007d;
 `
 
-export const STextHeading = styled.h1`
-    font-size: 20px;
+export const STextHeading = styled.p`
+    font-size: 28px;
+    font-weight: bold;
 `
 
 export const STextDescription = styled.p`
+    padding: 10px;
     margin: 0;
-    font-size: 12px;
     text-align: center;
     font-weight: bold;
-
 `

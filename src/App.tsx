@@ -1,8 +1,8 @@
 import React from 'react';
-import {SContent, SContentWrapper, SHeader, SServiceWrapper, SWrapper} from "./AppStyle";
+import {SContentWrapper, SHeader, SMainContent, SServiceWrapper, SWrapper} from "./AppStyle";
 import {NavElem} from "./componets/NavElem/NavElem";
 import {Service} from "./componets/Service/Service";
-import {MainImage} from "./componets/MainImage/MainImage";
+import {MainContent} from "./componets/MainContent/MainContent";
 
 export function App() {
     return (
@@ -15,25 +15,18 @@ export function App() {
                 <NavElem text='Статьи' variant='orange'/>
                 <NavElem text='Контакты' variant='pink'/>
             </SHeader>
-
             <SContentWrapper>
-
                 <SServiceWrapper>
                     <Service text='Услуга 1' variant='red'/>
                     <Service text='Услуга 2' variant='red'/>
                     <Service text='Услуга 3' variant='red'/>
                     <Service text='Услуга 4' variant='red'/>
-                    <Service text='Услуга 5' variant='blue'/>
+                    <Service text='Услуга 5' variant='red'/>
                 </SServiceWrapper>
-
-                <SContent>
-                   <MainImage/>
-                </SContent>
-
-
+                <SMainContent>
+                    <MainContent/>
+                </SMainContent>
             </SContentWrapper>
-
-
         </SWrapper>
     );
 }

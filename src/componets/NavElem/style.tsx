@@ -4,14 +4,12 @@ import styled from "styled-components";
 
 export const SNavElem = styled.div<Pick<GeneralPropsType, 'variant'>>`
     width: 100%;
-    height: 100%;
     margin: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 12px;
-
+    
     ${(props) => getBackgroundColor(props.variant)}
 `
 

@@ -1,13 +1,14 @@
 import styled from "styled-components";
+import {MainContent} from "./componets/MainContent/MainContent";
 
 export const SWrapper = styled.div`
-    padding: 10px;
+    max-width: 1200px;
     width: 100%;
-    border: 3px solid black;
     margin: 15px;
+    font-size: 18px;
+    color: white;
 `
 export const SHeader = styled.div`
-    height: 50px;
     width: 100%;
     display: flex;
     gap: 1px;
@@ -22,14 +23,12 @@ export const SContentWrapper = styled.div`
 
 export const SServiceWrapper = styled.div`
     width: calc(100% / 3);
-    border: 3px solid black;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
 `
 
-export const SContent = styled.div`
+export const SMainContent = styled(MainContent)`
     width: 100%;
-    border: 3px solid black;
-
 `
+

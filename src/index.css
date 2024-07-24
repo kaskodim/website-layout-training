@@ -19,6 +19,7 @@ code {
 #root {
     background-color: rgb(53 53 53);
     height: 100vh;
+    overflow: auto;
     display: flex;
     justify-content: center;
 }
